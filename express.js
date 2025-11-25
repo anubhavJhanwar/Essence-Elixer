@@ -5,11 +5,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const User = require('./models/User');
 const multer = require('multer');
+require('dotenv').config();
 
-
-
-
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 
@@ -21,7 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 const session = require('express-session');
 app.use(session({
-    secret: 'your-secret-key',
+    secret: process.env.SESSION_SECRET || 'your-secret-key',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
@@ -90,7 +88,7 @@ app.post('/add-perfume', upload.single('image'), async (req, res) => {
 
 
 app.use(session({
-    secret: 'yourSecretKey', // Use a secure and unique secret
+    secret: process.env.SESSION_SECRET || 'yourSecretKey', // Use a secure and unique secret
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false } // For local development, set secure to false. In production, set to true with HTTPS

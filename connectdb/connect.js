@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-// MongoDB connection string
-const db = "mongodb+srv://suvansh:1TclRgaRcfSDje2E@webdev1.bmydv.mongodb.net/?retryWrites=true&w=majority&appName=webdev1";
+// MongoDB connection string from environment variable
+const db = process.env.MONGODB_URI;
 
 // Async function to connect to the database
 const dbconnect = async () => {

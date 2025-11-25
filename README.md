@@ -38,6 +38,7 @@ A modern e-commerce platform for premium fragrances, perfumes, and deodorants. E
 **Authentication & Security:**
 - bcrypt/bcryptjs for password hashing
 - express-session for session management
+- dotenv for environment variable management
 
 **File Upload:**
 - Multer for handling image uploads
@@ -63,8 +64,10 @@ cd Essence-Elixir
 npm install
 ```
 
-3. Configure MongoDB connection:
-   - Update the database connection string in `connectdb/connect.js`
+3. Configure environment variables:
+   - Copy `.env.example` to `.env`
+   - Update the MongoDB connection string in `.env`
+   - Change the SESSION_SECRET to a secure random string
 
 4. Create required directories:
 ```bash
