@@ -1,0 +1,123 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background: linear-gradient(135deg, #4B2C20, #8B4513, #A0522D, #D2B48C);
+    background-size: cover;
+}
+
+.container {
+    width: fit-content;
+    position: fixed;
+    top: 7%;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 12px #01352c;
+    border-radius: 8px;
+    background-color: none;
+}
+
+.illustration {
+    width: 700px ;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.illustration img{
+    object-fit: cover;
+    width: 700px ;
+    filter: brightness(70%);
+    /* opacity: 80%; */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.signup {
+    text-align: center;
+    width: 440px;
+    padding: 40px 20px;
+    font-size: 16px;
+    color: #01352c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.signup-heading{
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+
+
+.email-input-button{
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    width: 100%;
+    color:grey ;
+    padding: 14px 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.password-input-button{
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    width: 100%;
+    color:grey ;
+    padding: 14px 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 28px;
+}
+
+.signup-button {
+    background-color:#6C4E31 ;
+    text-decoration: none;
+    border: none;
+    color: #e1eacd;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signup-button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: burlywood;
+    transform: translateY(0.2%) scale(0.92);
+}
+
+.signup-body1{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.signup-body2{
+    text-align: center;
+    font-size: 16px;
+    color:gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+

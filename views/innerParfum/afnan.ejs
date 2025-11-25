@@ -1,0 +1,57 @@
+<%- include('../partials/header', {pageTitle:'perfume1'}) %>
+<div class="container">
+    <div class="product-page">
+        <div class="product-image">
+            <img src="/assets/rn-image_picker_lib_temp_a3791f6e-a304-4732-a5a0-7b50b1639f53.webp" alt="JANNAT-E-ZUHUR Perfume">
+        </div>
+        <div class="product-details">
+            <h1>Afnan Supremacy Not Only Intense</h1>
+            <div class="rating">
+                <span class="stars">⭐ 4.8</span>
+                <span class="reviews">|5607 reviews</span>
+            </div>
+            <p class="price">
+                <span class="current-price">₹3300 </span>
+                <span class="original-price"><del>₹4999</del></span>
+            </p>
+            <div class="quantity">
+              <button class="quantity-btn" onclick="decrease()">-</button>
+              <input type="number" id="quantity" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="increase()">+</button>
+          </div>
+            <button class="add-to-cart">ADD TO CART</button>
+            
+            <div class="notes-section">
+                <div class="notes">
+                    <p><strong>Top Notes Blends:</strong> Jasmine, Taif Rose, Ruh-al Ward</p>
+                    <p><strong>Middle Notes Blends:</strong> Jasmine Oud, Lilies of Valley, Rose, Lavender</p>
+                    <p><strong>Base Notes Blends:</strong> Amber, Fruits, White Musk</p>
+                </div>
+                <p class="description">
+                    An extract of 99 types of flower oils that take you on a journey to the gardens of Heaven (Jannah) with its floral twist. Made of the world’s finest roses from Grasse, France, the bottle contains over 10 years of matured attar components. The perfume has a longevity of 48 hours.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+  function increase() {
+      let quantityInput = document.getElementById('quantity');
+      let currentValue = parseInt(quantityInput.value);
+      quantityInput.value = currentValue + 1;
+  }
+
+  function decrease() {
+      let quantityInput = document.getElementById('quantity');
+      let currentValue = parseInt(quantityInput.value);
+      if (currentValue > 1) {
+          quantityInput.value = currentValue - 1;
+      }
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.img {
+    width:8rem;
+    length:8rem;
+    transition: 0.4 sec linear;
+
+}
+.img img :hover{
+    width:9rem;
+    lenght:9rem;
+}

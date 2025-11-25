@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/cart.css">
+  <title> Your Cart</title>
+</head>
+<body>
+
+  <div class="nav">
+    <div class="topbox">
+        <p>🎁FREE GIFT ON PREPAID ORDERS</p>
+    </div>
+    <div class="secoundbox">
+        <div class="navicon">
+            <!-- <i  class=" fa-solid fa-bars"></i> -->
+            <div class="main_box">
+                <input type="checkbox" id="check" />
+                <div class="btn_one">
+                  <label for="check" >
+                    <i class="fa-solid fa-bars"></i>
+                  </label>
+                </div>
+           
+                <div class="sidebar_menu">
+                  <div class="logo">
+                    <a href="#">PROFILE</a>
+                  </div>
+          
+                  <div class="btn_two">
+                    <label for="check" >
+                      <i class="fa-solid fa-xmark"></i>
+                    </label>
+                  </div>
+                  <div class="menu">
+                    <ul>
+                      <li>
+                        <a href="./pages/index_perfume(1).html">PERFUMES</a>
+                      </li>
+                      <li>
+                        <a href="./pages/attar.html">ATTAR</a>
+                      </li>
+                      <li>
+
+                        <a href="./pages/deos.html">DEODRANTS</a>
+                      </li>
+                      <li>
+                        <a href="./pages/miniature.html">MINIATURE</a>
+                      </li>
+                      <li>
+                        <a href="./pages/designer.html">DESIGNER</a>
+                      </li>
+                      <li>
+                        <a href="./pages/combos.html">COMBOS</a>
+                      </li>
+                      <li>
+                        <a href="./pages/bestsellers.html">BESTSELLER</a>
+                      </li>
+                    </ul>
+                  </div>
+          
+                  <div class="social_media">
+                    <ul>
+                      <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="title">
+          <a href="index.html">
+            <img src="assets/website_icon.png" class="icon" alt="acm">
+            <img src="assets/website_name.png" class="name" alt="acm">
+          </a>
+        </div>
+</div>
+  </div>
+
+  <div class="rectangle">
+    <div id="cart-grid" class="cart-grid">
+      <!-- Cart items will be dynamically inserted here by imp1.js -->
+    </div>
+    <div class="cart-footer">
+      <h3>Subtotal: <span id="subtotal">Rs0.00</span></h3>
+      <a href="index.html" class="button">Checkout</a>
+    </div>
+  </div>
+
+  <!-- Link to the external JavaScript file containing cart functionality -->
+  <script src="scripts/imp1.js"></script>
+</body>
+</html>

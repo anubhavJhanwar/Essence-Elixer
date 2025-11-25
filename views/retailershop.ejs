@@ -1,0 +1,121 @@
+<%- include('partials/header', {pageTitle:'attar'}) %>
+<style>
+/* Styling for the container */
+.perfume-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.h1{
+    text-align: center;
+}
+/* Styling for each perfume card */
+.perfume-item {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.perfume-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the images */
+.perfume-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Styling for the perfume name */
+.perfume-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Styling for the price */
+.perfume-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Styling for buttons */
+.perfume-item button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #C2B9AD;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.perfume-item button:hover {
+    background-color: #6B5B4C;
+    transform: scale(1.05);
+}
+
+/* Back-home button styling */
+.back-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-home button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #C2B9AD;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-home button:hover {
+    background-color: #6B5B4C;;
+    transform: scale(1.05);
+}
+.kkkkk{
+    margin: 6rem auto 1rem auto;
+}
+
+</style>
+<div class="kkkkk">
+    
+        <!-- Display perfumes -->
+        <div class="perfume-container">
+            <% perfumes.forEach(perfume => { %>
+                <div class="perfume-item">
+                    <img src="<%= perfume.image %>" alt="<%= perfume.name %>">
+                    <h2><%= perfume.name %></h2>
+                    <p><strong>Discounted Price:</strong> $<%= perfume.discountedPrice %></p>
+                    <p><strong>Actual Price:</strong> $<%= perfume.actualPrice %></p>
+                    <button>Add to Cart</button>
+                </div>
+            <% }); %>
+        </div>
+    
+        <br>
+        <!-- Back to Home button -->
+        <div class="back-home">
+            <button onclick="location.href='/'">Back to Home</button>
+        </div>
+
+    </div>
+    </body>
+    </html>
+    
+    <%- include('partials/footer', {pageTitle:'attar'}) %>

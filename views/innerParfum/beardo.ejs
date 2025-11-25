@@ -1,0 +1,56 @@
+<%- include('../partials/header', {pageTitle:'perfume1'}) %>
+<div class="container">
+    <div class="product-page">
+        <div class="product-image">
+            <img src="../assets/for him(3).png" alt="JANNAT-E-ZUHUR Perfume">
+        </div>
+        <div class="product-details">
+            <h1>Beardo Godfather</h1>
+            <div class="rating">
+                <span class="stars">⭐ 4.9</span>
+                <span class="reviews">|45632</span>
+            </div>
+            <p class="price">
+                <span class="current-price">550</span>
+                <span class="original-price"><del>1250</del></span>
+            </p>
+            <div class="quantity">
+              <button class="quantity-btn" onclick="decrease()">-</button>
+              <input type="number" id="quantity" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="increase()">+</button>
+          </div>
+            <button class="add-to-cart">ADD TO CART</button>
+            
+            <div class="notes-section">
+                <div class="notes">
+                    <p><strong>Top Notes Blends:</strong> Jasmine, Ruh-al Ward</p>
+                    <p><strong>Middle Notes Blends:</strong> Jasmine Oud, Lilies of Valley, Rose, Lavender</p>
+                    <p><strong>Base Notes Blends:</strong> Amber, Fruits, White Musk</p>
+                </div>
+                <p class="description">
+                    An extract of 99 types of flower oils that take you on a journey to the gardens of Heaven (Jannah) with its floral twist. Made of the world’s finest roses from Grasse, France, the bottle contains over 10 years of matured attar components. The perfume has a longevity of 48 hours.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+  function increase() {
+      let quantityInput = document.getElementById('quantity');
+      let currentValue = parseInt(quantityInput.value);
+      quantityInput.value = currentValue + 1;
+  }
+
+  function decrease() {
+      let quantityInput = document.getElementById('quantity');
+      let currentValue = parseInt(quantityInput.value);
+      if (currentValue > 1) {
+          quantityInput.value = currentValue - 1;
+      }
+  }
+</script>
+
+</body>
+</html>

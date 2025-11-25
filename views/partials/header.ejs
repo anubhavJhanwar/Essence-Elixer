@@ -1,0 +1,96 @@
+<!-- views/partials/header.ejs -->
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/<%= pageTitle.toLowerCase().replace(/\s+/g, '') %>.css">
+    <% if (pageTitle.toLowerCase() === 'style') { %>
+        <link rel="stylesheet" href="styles/cart.css"> 
+    <% } %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="/scripts/login.js" defer></script>
+</head>
+<body>
+<header>
+<div class="main">
+    <div class="nav">
+        <div class="topbox">
+            <p>🎁FREE GIFT ON PREPAID ORDERS</p>
+        </div>
+        <div class="secoundbox">
+            <div class="navicon">
+                <div class="main_box">
+                    <input type="checkbox" id="check" />
+                    <div class="btn_one">
+                        <label for="check">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                    </div>
+                    <div class="sidebar_menu">
+                        <div class="logo">
+                            <a href="#">PROFILE</a>
+                        </div>
+                        <div class="btn_two">
+                            <label for="check">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="/index_perfume">PERFUMES</a></li>
+                                <li><a href="/attar">ATTAR</a></li>
+                                <li><a href="/deos">DEODRANTS</a></li>
+                                <li><a href="/miniature">MINIATURE</a></li>
+                                <li><a href="/designer">DESIGNER</a></li>
+                                <li><a href="/combos">COMBOS</a></li>
+                                <li><a href="/bestsellers">BESTSELLER</a></li>
+                            </ul>
+                        </div>
+                        <div class="social_media">
+                            <ul>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <a href="/">
+                    <img src="/assets/website_icon.png" class="icon" alt="acm">
+                    <img src="/assets/website_name.png" class="name" alt="acm">
+                </a>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <div class="row">
+                        <input type="text" id="input-box" placeholder="Search Anything!" autocomplete="off">
+                        <button class="Search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="search2">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <a href="/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="login">
+                        <div class="button-container">
+                            <button class="btn login-btn" id="loginBtn">Log In</button>
+                            <button class="btn logout-btn" id="logoutBtn" style="display:none;">Log Out </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+

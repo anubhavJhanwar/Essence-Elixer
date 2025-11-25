@@ -1,0 +1,263 @@
+/* TOP SECTION */
+.nav{
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+
+}
+.topbox{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6B5B4C;
+  height: 2rem;
+  width: 100%;
+
+
+}
+.secoundbox{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: white;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.title .icon{
+height: 3rem;
+}
+.title .name{
+  height: 3rem;
+}
+.navicon , .cart {
+  padding: 0 2rem;
+  display: flex;
+}
+.secoundbox i{
+  font-size: 1.5rem;
+}
+
+
+.btn_one i {
+  color: black;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  /* transition linearly */
+  transition: all 0.4s linear;
+}
+.sidebar_menu .logo {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+  height: 60px;
+}
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 50px;
+  color: black ;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.sidebar_menu .btn_two i {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 275px;
+  line-height: 60px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.sidebar_menu .menu {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+.sidebar_menu .menu li {
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+.sidebar_menu .menu i,
+a {
+  color: black ;
+  text-decoration: none;
+  font-size: 20px;
+}
+.sidebar_menu .menu i {
+  padding-right: 8px;
+}
+.sidebar_menu .social_media {
+  position: absolute;
+  left: 25%;
+  bottom: 50px;
+}
+.sidebar_menu .social_media i {
+  color: black;
+  opacity: 0.5;
+  padding: 0 5px;
+}
+#check {
+  display: none;
+}
+.sidebar_menu .menu li:hover {
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .social_media i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+#check:checked ~ .btn_one i {
+  opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i {
+  opacity: 1;
+}
+
+
+/* Cart Container */
+/* Cart Container Styling */
+.cart-grid {
+  display: flex;
+  flex-direction: column; /* Stack items in a column */
+  gap: 20px;
+  padding: 20px;
+  max-width: 75%; /* Limit max width for a centered appearance */
+  margin: 0 auto; /* Center the cart container on the page */
+  background-color: #f5f5f5; /* Optional light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Item Styling */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #C2B9AD; /* Consistent background color */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px; /* Space between image and details */
+}
+
+/* Cart Item Details */
+.cart-item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-item-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.cart-item-quantity,
+.cart-item-price,
+.cart-item-total {
+  font-size: 1rem;
+  color: #555;
+  margin: 4px 0;
+}
+
+/* Remove Button Styling */
+.remove-button {
+  background-color: #6B5B4C;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+
+/* Adjustments for Responsive Design */
+@media (max-width: 768px) {
+  .cart-item {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+  }
+
+  .cart-item img {
+      margin-bottom: 15px;
+      width: 100%; /* Full width on smaller screens */
+      height: auto;
+  }
+
+  .remove-button {
+      align-self: center;
+      margin-top: 10px;
+  }
+}
+
+
+
+  /* Subtotal and checkout button styling */
+  .cart-footer {
+    text-align: center;
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .rectangle{
+    margin: 7rem 0;
+  }

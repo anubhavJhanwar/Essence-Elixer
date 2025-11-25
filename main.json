@@ -1,0 +1,167 @@
+[
+    {
+      "id": 1,
+      "img": "./assets/rn-image_picker_lib_temp_a3791f6e-a304-4732-a5a0-7b50b1639f53.webp",
+      "name": " Supremacy Not Only Intense",
+      "category": "Eau de Parfum",
+      "rating": 4.8,
+      "reviews": 5607,
+      "cost": 3300,
+      "url": "./pages/perfume1.html"
+    },
+    {
+      "id": 2,
+      "img": "./assets/65ddb9be999afe402b39fbf8-armaf-club-de-nuit-intense-men-39-s-edt.jpg",
+      "name": "Armaf Club de Nuit Intense Man",
+      "category": "Pure Parfum",
+      "rating": 4.9,
+      "reviews": 45631,
+      "cost": 3600
+    },
+    {
+      "id": 3,
+      "img": "./assets/811NG3nBJYL._AC_UF1000,1000_QL80_.jpg",
+      "name": "Davidoff Coolwater",
+      "category": "Eau de Toilette",
+      "rating": 4.4,
+      "reviews": 19982,
+      "cost": 2400
+    },
+    {
+      "id": 4,
+      "img": "./assets/na-spirit-of-kanpur-attar-deep-rich-notes-of-jasmine-hasan-oud-original-imagzyy3z5rz54zy.webp",
+      "name": "Hasan Oud Arabia",
+      "category": "Attar",
+      "rating": 4.5,
+      "reviews": 4563,
+      "cost": 1200
+    },
+    {
+      "id": 5,
+      "img": "./assets/al-rehab-choco-musk-1-e1684248510810.webp",
+      "name": "AL Rehab Choco Musk",
+      "category": "Attar",
+      "rating": 4.9,
+      "reviews": 3418,
+      "cost": 300
+    },
+    {
+      "id": 6,
+      "img": "./assets/ChocolatePerfumeAttarcopy.webp",
+      "name": "Fragrance & Fashion Chocolate",
+      "category": "Attar",
+      "rating": 4.4,
+      "reviews": 4563,
+      "cost": 499
+    },
+    {
+      "id": 7,
+      "img": "./assets/0b525640-a248-48ab-8a7d-326b195df4a0.png",
+      "name": "Wild Stone Steel",
+      "category": "Deodrant",
+      "rating": 4.4,
+      "reviews": 56173,
+      "cost": 200
+    },
+    {
+      "id": 8,
+      "img": "./assets/8YcirBu8d-1135089_5.avif",
+      "name": "Bella Vita Oud",
+      "category": "Deodrant",
+      "rating": 3.5,
+      "reviews": 1727,
+      "cost": 199
+    },
+    {
+      "id": 9,
+      "img": "./assets/06_8c71fd8c-23d5-4760-ab83-a60501b78e64_800x.webp",
+      "name": "Denver Prestige",
+      "category": "Deodrant",
+      "rating": 4.2,
+      "reviews": 56173,
+      "cost": 200
+    },
+    {
+      "id": 10,
+      "img": "./assets/for him(4).png",
+      "name": "Embark My Life",
+      "category": "Eau de Parfum",
+      "rating": 4.0,
+      "reviews": 6752,
+      "cost": 1200
+
+    },
+    {
+      "id": 11,
+      "img": "./assets/for him(3).png",
+      "name": "Beardo Godfather",
+      "category": "Eau de Parfum",
+      "rating": 3.9,
+      "reviews": 5607,
+      "cost": 550
+    },
+    {
+      "id": 12,
+      "img": "./assets/for him(5).png",
+      "name": "The Man Company Sky",
+      "category": "Eau de Parfum",
+      "rating": 3.8,
+      "reviews": 45631,
+      "cost": 400
+    },
+    {
+      "id": 13,
+      "img": "./assets/for him.png",
+      "name": "Bergamot Beaut",
+      "category": "Eau de Parfum",
+      "rating": 4.2,
+      "reviews": 21688,
+      "cost": 600
+    },
+    {
+      "id": 14,
+      "img": "./assets/100mlpng.webp",
+      "name": "Blanko Old Money",
+      "category": "Eau de Parfum",
+      "rating": 4.0,
+      "reviews": 3337,
+      "cost": 550
+    },
+    {
+      "id": 15,
+      "img": "./assets/41fqcna8S5L._SX300_SY300_QL70_FMwebp_.webp",
+      "name": "Wild Stone Ultra Sensual",
+      "category": "Eau de Parfum",
+      "rating": 4.3,
+      "reviews": 45899,
+      "cost": 219
+    },
+    {
+      "id": 16,
+      "img": "./assets/61zBq6pkFFL._SX679_.jpg",
+      "name": "Park Avenue Euphoria",
+      "category": "Eau de Parfum",
+      "rating": 4.0,
+      "reviews": 19998,
+      "cost": 250
+    },
+    {
+      "id": 17,
+      "img": "./assets/61-3sDp2zpL.jpg",
+      "name": "Yardley London Gentelman Classic",
+      "category": "Eau de Parfum",
+      "rating": 4.5,
+      "reviews": 4563,
+      "cost": 300
+    },
+    {
+      "id": 18,
+      "img": "./assets/61nyqWXDm7L._SX679_.jpg",
+      "name": "Skinn by Titan, Raw",
+      "category": "Eau de Parfum",
+      "rating": 4.7,
+      "reviews": 2008,
+      "cost": 1300
+    }
+  ]
+  
